@@ -4,15 +4,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import "~pure-css-loader/dist/css-loader.css";
-
 @import "~select2/src/scss/core";
-
-@import "~sweetalert2/src/sweetalert2";
 
 // Variables
 @import 'variables';
 
-@import "../assets/css/app-styles.css";
+@import "../assets/css/guest-styles.css";
 
 

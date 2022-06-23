@@ -10,13 +10,17 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/guest.css') }}">
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        @livewireStyles
+        @stack('styles')
     </head>
-    <body class="bg-light font-sans antialiased">
+    <body>
         {{ $slot }}
+
+        @livewireScripts
+        <script src="{{ asset(mix('js/guest.js')) }}"></script>
+
+        @stack('scripts')
     </body>
 </html>

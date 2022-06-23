@@ -11,10 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.js('resources/js/guest.js', 'public/js/guest.js')
+    .sass('resources/sass/guest.scss', 'public/css/guest.css')
+    .webpackConfig(require('./webpack.config'))
+
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .webpackConfig(require('./webpack.config'));
+    .webpackConfig(require('./webpack.config'))
 
 if (mix.inProduction()) {
-    mix.version();
+    mix.version()
 }

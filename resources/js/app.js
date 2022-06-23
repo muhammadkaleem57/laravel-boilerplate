@@ -1,7 +1,15 @@
-require('./bootstrap');
+import "./bootstrap.js"
 
-import Alpine from 'alpinejs';
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()
 
-window.Alpine = Alpine;
+import "cleave.js"
+import "select2"
 
-Alpine.start();
+import Swal from "sweetalert2"
+window.Swal = Swal
+
+import '../assets/js/livewire-common'
+
+import "../assets/js/app-scripts"

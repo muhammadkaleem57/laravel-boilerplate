@@ -163,6 +163,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+        * Custom Service Providers...
+        */
+        App\Providers\EloquentServiceProvider::class,
+        App\Providers\BladeDirectivesServiceProvider::class,
+        /*
          * Package Service Providers...
          */
 

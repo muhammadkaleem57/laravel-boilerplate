@@ -16,6 +16,7 @@
         "guzzlehttp/guzzle": "^7.4.5",
         "laravel/framework": "^8.83.17",
         "laravel/jetstream": "^2.8",
+        "laravel/passport": "^10.4",
         "laravel/sanctum": "^2.15.1",
         "laravel/tinker": "^2.7.2",
         "livewire/livewire": "^2.5",

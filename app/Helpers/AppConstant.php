@@ -25,3 +25,5 @@ const GENDER = [
     MALE => 'Male',
     OTHERS => 'Others',
 ];
+
+const PAGINATION_LENGTH = 20;

@@ -13,23 +13,13 @@ trait UUID
         return $this->generateUUIdString($model, $existedUuid);
     }
 
-    public function generateAPIKey(): string
-    {
-        return $this->uuid();
-    }
-
     private function generateUUIdString($model, $existedUuid): ?string
     {
-        $uuidStr = $this->uuid();
+        $uuidStr = \Ramsey\Uuid\Uuid::uuid4()->toString();
 
         if (in_array($uuidStr, $existedUuid))
             return $this->generateUUIdString($model, $existedUuid);
 
         return $uuidStr;
-    }
-
-    private function uuid(): string
-    {
-        return \Ramsey\Uuid\Uuid::uuid4()->toString();
     }
 }

@@ -30,6 +30,7 @@
         <livewire:components.event-listener/>
         <livewire:components.modal/>
         <livewire:components.confirmation-modal/>
+        <x-jet.loader/>
 
         @stack('modals')
 
